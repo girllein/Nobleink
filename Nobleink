@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nobleink</title>
+    <link rel="stylesheet" href="styles.css">
+</head><meta name="google-site-verification" content="34yKnbvGtArxq-FnOXo0KRwQrfCsFSy9ek4snVajxw8" />
+<body>
+    <header>
+        <h1>Nobleink</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#manga">Манхвы</a></li>
+                <li><a href="#about">О нас</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="manga">
+            <h2>Манхвы</h2>
+            <div class="manga-list">
+                <!-- Пример манхвы -->
+                <div class="manga-item">
+                    <h3>Манхва 1</h3>
+                    <p class="manga-description">Описание манхвы...</p>
+                    <button onclick="toggleReadMore(this)">Читать дальше</button>
+                    <p class="read-more" style="display: none;">Текст, который будет скрыт до прочтения.</p>
+                    <div class="comments">
+                        <h4>Комментарии</h4>
+                        <textarea placeholder="Оставьте комментарий..."></textarea>
+                        <button onclick="addComment(this)">Отправить</button>
+                        <div class="comment-list"></div>
+                    </div>
+                </div>
+                <!-- Добавьте больше манхв здесь -->
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>О нас</h2>
+            <p>Информация о сайте Nobleink.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nobleink</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
